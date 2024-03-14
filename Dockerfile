@@ -12,4 +12,4 @@ ENV PROFILE=dev
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-Dspring.profiles.active=${PROFILE}", "-jar", "checkpoint1.jar"]
+ENTRYPOINT ["java", "-Dspring.profiles.active=${PROFILE}", "-jar", "target/checkpoint1.jar"]

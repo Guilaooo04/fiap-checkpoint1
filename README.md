@@ -1,4 +1,4 @@
-# Ping
+# Checkpoint 1
 
 Aplicação Java com container para exemplo
 
@@ -14,7 +14,7 @@ Aplicação Java com container para exemplo
 #### Clone
 
 ```
-git clone https://github.com/acnaweb/ping.git
+git clone https://github.com/Guilaooo04/fiap-checkpoint1.git
 ```
 
 ## Execução

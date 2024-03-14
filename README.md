@@ -30,10 +30,23 @@ docker build -t ping .
 
 * Executar container
 
-spring.profiles.active=dev
+Para o perfil de desenvolvimento:
 
 ```
-docker run -d -p 8080:8080 -e PROFILE=<prd|dev|stg> ping
+docker run -d -p 8080:8080 -e PROFILE=dev ping
+```
+
+Para o perfil de staging:
+
+```
+docker run -d -p 8080:8080 -e PROFILE=stg ping
+```
+
+
+Para o perfil de produção:
+
+```
+docker run -d -p 8080:8080 -e PROFILE=prd ping
 ```
 
 ## Container Registry
@@ -44,14 +57,14 @@ docker run -d -p 8080:8080 -e PROFILE=<prd|dev|stg> ping
 * Login
 
 ```
-docker login -u <username>
+docker login -u Guilaooo04
 ```
 
 * Criar imagem pronta para upload (método 1 - criando nova imagem)
 
 
 ```
-docker build -t <username>/ping .
+docker build -t Guilaooo04/ping .
 ```
 
 
@@ -59,7 +72,7 @@ docker build -t <username>/ping .
 
 
 ```
-docker tag ping acnaweb/ping
+docker tag ping Guilaooo04/ping
 ```
 
 
@@ -67,7 +80,7 @@ docker tag ping acnaweb/ping
 
 
 ```
-docker push acnaweb/ping 
+docker push Guilaooo04/ping 
 ```
 
 
@@ -89,10 +102,5 @@ http://localhost:8080/ping
 
 ## Contatos
 
-- Desenvolvedor 1 - desenvolvedor1@email.com
-- Desenvolvedor 2 - desenvolvedor2@email.com
+- Desenvolvedor 1 - guigatome05@outlook.com
 
-## Referencias
-
-- [UOL](https://www.uol.com.br/)
-- [Gov br](https://www.gov.br/)
